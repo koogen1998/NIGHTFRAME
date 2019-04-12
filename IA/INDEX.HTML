@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+
+    <head>
+        
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    
+        <meta charset="utf-8" />
+        
+        <title>FRAME CINEMA  </title>
+        
+        <style type= "text/css">
+        
+           .mySlides {display:none}
+            
+            body {
+                background-color:#4d0000;
+                background-size: cover%;
+                background-position:center;
+                
+            }
+            
+            
+            
+            .menu {
+                
+                width:800px;
+                height: 120px;
+                
+            }
+           
+            .nav {
+                width: 100%;
+                float: left;
+                list-style: none;
+                margin-left: 350px;
+                margin-top: 30px;
+                margin-bottom : 0px;
+                font-family: 'Pacifico', cursive;
+                font-size: 22px;
+                color: #1a1a1a;
+               
+               
+                
+            }
+            
+            .nav li {
+                
+                float: left;
+                
+            }
+            
+            .nav li a {
+                
+                display : block;
+                padding: 8px 15px;
+                text-decoration: none;
+                border-right: 1px solid #ccc;
+                color: #1a1a1a;
+                
+            }
+            .nav li a:hover {
+                
+                text-decoration: underline;
+                color: #1a001a;
+            
+            
+            
+            }
+            
+
+            
+            .header {
+              
+                
+                height: 300px;
+                width: 1500px;
+                margin-bottom: 100px;
+               
+               
+            }
+            
+            
+            
+              h1 { 
+                  
+                font-family: "Avant Garde", Avantgarde, "Century Gothic", sans-serif;
+                text-rendering: optimizeLegibility;
+                color: #131313;
+                font-size: 92px;
+                padding: 80px 50px;
+                text-align: center;
+                text-transform: uppercase;
+                text-rendering: optimizeLegibility;
+                color: #131313;
+                letter-spacing: .15em;
+                
+            }
+            
+            
+            .review {
+                
+                width: 1470px;
+                height: 600px;
+                float: left;
+                margin: 0px 0px 30px 40px;
+                font-family: 'Impact, Charcoal, sans-serif;
+                font-size: 22px;
+                color: #131313;
+                
+            
+                
+            }
+            
+            .top5 {
+                
+                width: 1470px;
+                height: 1200px;
+                float: left;
+                font-family: 'Pacifico', cursive;
+                margin: 20px 0px 0px 40px;
+                font-size: 22px;
+                
+            }
+            
+            .moon {
+                
+               display: inline-block;
+                
+                
+                
+                
+            }
+            
+            
+            
+            .next {
+  
+                right: 0;
+                border-radius: 3px 0 0 3px;
+                
+                }
+            
+            
+            .dot {
+                
+                cursor: pointer;
+                height: 13px;
+                width: 13px;
+                margin: 70px 2px 0px 0px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+                }
+
+
+        .active, .dot:hover {
+              background-color: #717171;
+                }
+
+        
+            .fade {
+ 
+                -webkit-animation-name: fade;
+  
+                -webkit-animation-duration: 1.5s;
+  
+                animation-name: fade;
+  
+                animation-duration: 1.5s;
+
+            }
+
+
+            @-webkit-keyframes fade {
+  
+                from {opacity: .4} 
+ 
+                to {opacity: 1}
+
+            }
+
+
+            @keyframes fade {
+  
+                from {opacity: .4} 
+  
+                to {opacity: 1}
+
+            }
+            
+            
+            /* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 24px 30px;
+    margin: 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: Grey;
+    color: white;
+    padding: 14px 20px;
+    margin: 0px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 50%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 32px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.5s;
+    animation: animatezoom 0.5s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+          #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 800px;
+  z-index: 99;
+  border: 10px;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 20px;
+  width: 5%;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}  
+
+            
+        
+         </style>
+
+    </head>
+    
+    
+    <body>
+
+         
+        
+        
+        
+                
+                <h1>FRAME CINEMA</h1>
+            
+           
+       
+        
+            
+        </div> 
+        
+        <hr>
+        
+        <div class="menu">
+            
+            <ul class="nav">
+
+                <li><a href="C:\Users\KOOGENESSAN\Desktop\IA\INDEX.html">Home</a></li>
+                <li><a href="C:\Users\KOOGENESSAN\Desktop\IA\coming soon.html">Coming Soon </a></li>
+                <li><a href="NowShowing.html">Now Showing</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+
+
+            </ul>
+        
+        
+        </div>
+        
+        <hr>
+    
+        <div class="review">
+        
+            <h2>Latest Reviews</h2>
+                
+                <div class="moon">
+                    
+                    
+
+                        <div class="mySlides fade">
+                            
+                                
+                                <a href="C:\Users\KOOGENESSAN\Desktop\IA\Jumanji.html"><img src="C:\Users\KOOGENESSAN\Desktop\IA\Jumanji.jpg" width="400px" height="750px" class="image"></a>
+                               
+                                <a href="C:\Users\KOOGENESSAN\Desktop\IA\Rampage.html"><img src= "C:\Users\KOOGENESSAN\Desktop\IA\Rampage.jpg" width="350px" height="750px"></a>
+                    
+                                <a href="C:\Users\KOOGENESSAN\Desktop\IA\AVENGERS.html"><img src="C:\Users\KOOGENESSAN\Desktop\IA\Avenger.jpg" width="400px" height="750px"></a>
+                    
+                       
+                            
+                             
+                        </div>
+                    
+                        <div class="mySlides fade">
+ 
+  
+                            <a href="C:\Users\KOOGENESSAN\Desktop\IA\Coco.html"><img src="C:\Users\KOOGENESSAN\Desktop\IA\Coco.jpg" width ="400px" height="750px"></a>
+                            
+                            <a href="C:\Users\KOOGENESSAN\Desktop\IA\Wonderwoman.html"><img src="C:\Users\KOOGENESSAN\Desktop\IA\Wonderwoman.jpg" width="350px" height="750px"></a>
+  
+                            <a href="C:\Users\KOOGENESSAN\Desktop\IA\ThorRagnarok.html"><img src="C:\Users\KOOGENESSAN\Desktop\IA\Thor.jpg" width="400px" height="750px"></a>
+                            
+                            
+
+                        </div>
+
+                        <div class="mySlides fade">
+                            
+                            <a href="C:\Users\KOOGENESSAN\Desktop\IA\Pokemon.html"><img src="C:\Users\KOOGENESSAN\Desktop\IA\Pokemon.jpg"width="400px" height="750px"></a>
+                            
+                            <a href="C:\Users\KOOGENESSAN\Desktop\IA\Ah Boys to Men 4.html"><img src="C:\Users\KOOGENESSAN\Desktop\IA\ABTM.jpg" width="350px" height="750px"></a>
+                            
+                            <a href="C:\Users\KOOGENESSAN\Desktop\IA\Daddyhome2.html"><img src="C:\Users\KOOGENESSAN\Desktop\IA\DDH.jpg" width="400px" height="750px"></a>
+                            
+                           
+
+
+                                    
+                        
+                        </div>
+                
+                </div>
+        
+        </div>
+        
+        
+        <div style="text-align:center">
+            
+            <span class="dot" onclick="currentSlide(1)"></span> 
+  
+            <span class="dot" onclick="currentSlide(2)"></span> 
+  
+            <span class="dot" onclick="currentSlide(3)"></span> 
+
+        </div>
+
+        <br>    
+           <br>  
+		      <br>  
+			     <br>  
+				    <br>  
+					   <br>  
+             
+        
+            	<hr>
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <img src ="https://cdn4.iconfinder.com/data/icons/aami-small-locations/30/aami_small-43-128.png" width="32" height="32"> <i>Sri Petaling Jalan Radin, Malaysia</i><br>
+        <img src ="https://furtaev.ru/preview/handset_2_small.png" width="32" height="32"> <i> Phone:016-6342222</i> <br>
+        <img src ="http://www.clker.com/cliparts/L/6/l/Q/M/3/emil-icom-hi.png" width="32" height="32"><i> Email: FRAME@gmail.com</i> <br>
+      </div>
+      
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<hr>
+<center>
+<font size=3> Copyright &copy; 2017 Asia Pacific Cinema.com </font>
+</center>
+
+        <script>
+          
+          var slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+          
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function() {scrollFunction()};
+          
+          function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                  document.getElementById("myBtn").style.display = "block";
+              } else {
+                  document.getElementById("myBtn").style.display = "none";
+              }
+          }
+          
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+          }
+    </script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
+
+
+</html>
